@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage">
+
+    <!-- progress bar -->
+
+    <!-- progress bar -->
+
+    <TextView
+        android:id="@+id/tvPlayMaxPoint"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginStart="381dp"
+        android:layout_marginLeft="381dp"
+        android:layout_marginTop="37dp"
+        android:text="00:00"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playProgressBar" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="78dp"
+        android:layout_height="61dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:text="저장"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toEndOf="@+id/btnStopPlay"
+        app:layout_constraintTop_toBottomOf="@+id/playProgressBar" />
+
+    <EditText
+        android:id="@+id/txtsound_name"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginBottom="52dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="파일 이름"
+        android:maxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/recProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/playProgressBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/backgroundimage"
+        android:max="60000"
+        android:padding="10dp"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartRec" />
+
+    <TextView
+        android:id="@+id/tvRecStartPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:text="00:00"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/recProgressBar"
+        app:layout_constraintTop_toBottomOf="@+id/recProgressBar" />
+
+    <TextView
+        android:id="@+id/tvRecMaxPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:text="01:00"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/recProgressBar"
+        app:layout_constraintTop_toBottomOf="@+id/recProgressBar" />
+
+    <Button
+        android:id="@+id/btnStartRec"
+        android:layout_width="100dp"
+        android:layout_height="61dp"
+
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitCenter"
+        android:text="녹음 시작"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnStopRec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recProgressBar" />
+
+    <Button
+        android:id="@+id/btnStopRec"
+        android:layout_width="100dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
+        android:text="녹음 중지"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recProgressBar" />
+
+    <SeekBar
+        android:id="@+id/recProgressBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="247dp"
+        android:background="@drawable/backgroundimage"
+        android:max="60000"
+        android:padding="10dp"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStartPlay"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="재생"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnStopPlay"
+        app:layout_constraintEnd_toStartOf="@+id/btnStopPlay"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnStopPlay"
+        android:layout_width="78dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="20dp"
+        android:text="정지"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/playProgressBar"
+        app:layout_constraintTop_toBottomOf="@+id/playProgressBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

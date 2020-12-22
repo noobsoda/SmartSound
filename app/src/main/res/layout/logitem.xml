@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:rowCount="1">
+
+        <TextView
+            android:id="@+id/empty1"
+            android:layout_width="27dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:gravity="bottom" />
+
+        <TextView
+            android:id="@+id/txt_logname"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="이름" />
+
+        <TextView
+            android:id="@+id/empty2"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:gravity="bottom" />
+
+        <TextView
+            android:id="@+id/txt_logDate"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="등록일" />
+
+
+    </GridLayout>
+</LinearLayout>

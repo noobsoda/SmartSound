@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".SoundAdd">
+
+
+    <GridView
+        android:id="@+id/listMenu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:background="@null"
+        android:choiceMode="singleChoice"
+        app:layout_constraintBottom_toTopOf="@+id/txtList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </GridView>
+
+    <TextView
+        android:id="@+id/txtList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="115dp"
+        android:text="저장 목록"
+        android:textColor="#686767"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listMenu" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:text="소리 추가"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_sub"
+        app:layout_constraintEnd_toStartOf="@+id/btn_sub"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="16dp"
+        android:text="소리 삭제"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_add"
+        app:layout_constraintTop_toBottomOf="@+id/txtList" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

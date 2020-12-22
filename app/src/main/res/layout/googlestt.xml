@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTv"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:text=" "
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/voiceBtn"
+        android:layout_width="108dp"
+        android:layout_height="98dp"
+        android:layout_below="@id/textTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/mic2"
+        android:scaleType="fitCenter"
+        />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="종료"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/Exit"
+        android:layout_toRightOf="@+id/Exit"
+        android:text="보내기"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼을 클릭하세요"
+        android:textColor="#FDF4F4"
+        android:textSize="16sp"
+        android:textStyle="bold" />/>
+
+</RelativeLayout>
